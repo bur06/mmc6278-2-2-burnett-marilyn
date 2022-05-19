@@ -23,3 +23,6 @@ If the user clicks OK, call your function again.
 NOTE: Extra alerts, confirms, and prompts
 will cause the tests to fail!
 */
+function rollDice() {
+    prompt("How many sides does the dice have?");
+}
