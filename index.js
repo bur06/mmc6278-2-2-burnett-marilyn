@@ -24,5 +24,7 @@ NOTE: Extra alerts, confirms, and prompts
 will cause the tests to fail!
 */
 function rollDice() {
-    prompt("How many sides does the dice have?");
+    var inputNum = prompt("How many sides does the dice have?");
+    var rollResult = Math.floor(Math.random() * inputNum) + 1;
+    alert("Your roll was " + rollResult);
 }
