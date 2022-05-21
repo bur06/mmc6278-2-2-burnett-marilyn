@@ -13,10 +13,11 @@ function greeting() {
 
     var today = new Date();
     var year = parseInt(today.getFullYear());
-    // var nowYr = Number(year);
+    var nowYr = parseInt(year);
 
-    var yrBorn = year - ageNum;
-
+    var yrBorn = nowYr - ageNum;
+    
+    //return(yrBorn);
     //console.log(typeof yrBorn);
     //var yrBorn = Math.floor(nowYr - ageNum) + 1;
     //alert("You were born in " + yrBorn + "!");
