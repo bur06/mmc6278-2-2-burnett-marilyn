@@ -4,7 +4,7 @@ function greeting() {
     var userAge = parseInt(ageStr);
 
     if (userName) {
-        prompt("Hi, " + userName + "!  " + ageStr);
+        prompt("Hi, " + userName + "! " + ageStr);
     } else {
         prompt("Hi!" + ageStr);
     }
