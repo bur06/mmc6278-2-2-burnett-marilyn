@@ -7,7 +7,11 @@ function greeting() {
     } else {
         prompt("Hi!" + inputAge);
     }
-    if(!inputAge) return;
+
+    var ageInt = parseInt(inputAge);
+    if(!inputAge) return; //cancels without input
+    var yrBorn = Math.floor(2022 - ageInt);
+    alert("You were born in " + yrBorn + "!");
 }
 
 greeting()
