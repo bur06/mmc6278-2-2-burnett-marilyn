@@ -9,16 +9,19 @@ function greeting() {
     }
 
     if(!inputAge) return; //cancels without input
-    var ageNum = parseInt(inputAge); //turns string into integer
+    var ageNum = Number(inputAge); //turns string into integer
 
     var today = new Date();
-    var nowYr = parseInt(today.getFullYear());
+    var year = parseInt(today.getFullYear());
+    // var nowYr = Number(year);
 
-    console.log(nowYr);
+    var yrBorn = (year - ageNum);
+    console.log(typeof yrBorn);
+    
+    //var yrBorn = Math.floor(nowYr - ageNum) + 1;
 
-    //var yrBorn = (nowYr - ageNum);
-    //console.log(yrBorn);
     //alert("You were born in " + yrBorn + "!");
+    return(yrBorn);
 }
 
 greeting();
