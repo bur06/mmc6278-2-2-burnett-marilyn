@@ -29,5 +29,9 @@ function rollDice() {
     if(!inputNum) return;
     var rollNum = Math.floor(Math.random() * inputNum) + 1;
     alert("Your roll is " + rollNum);
-}
+    var rollAgain = confirm("Would like to roll again?");
 
+    if (rollAgain) {
+        return rollDice();
+    }
+}
