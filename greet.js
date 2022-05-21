@@ -1,11 +1,14 @@
 function greeting() {
     var userName = prompt("Hello! What is your name?");
-    var userAge = (" What is your age?");
+    var ageStr =  (" What is your age?");
+    var userAge = parseInt(ageStr);
 
     if (userName) {
-        prompt("Hi, " + userName + "!  " + userAge);
+        prompt("Hi, " + userName + "!  " + ageStr);
     } else {
-        prompt("Hi!" + userAge);
+        prompt("Hi!" + ageStr);
     }
+    if(!ageStr) return;
 }
-greeting()
+
+//greeting()
