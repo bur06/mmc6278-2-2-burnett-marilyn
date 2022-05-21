@@ -1,14 +1,27 @@
 function greeting() {
     var userName = prompt("Hello! What is your name?");
-    var ageStr =  (" What is your age?");
-    var userAge = parseInt(ageStr);
+    var inputAge =  (" What is your age?");
 
     if (userName) {
-        prompt("Hi, " + userName + "! " + ageStr);
+        prompt("Hi, " + userName + "! " + inputAge);
     } else {
-        prompt("Hi!" + ageStr);
+        prompt("Hi!" + inputAge);
     }
-    if(!ageStr) return;
+    if(!inputAge) return;
 }
 
-//greeting()
+greeting()
+
+
+function rollDice() {
+    var inputString = prompt("How many sides does the dice have?");
+    var inputNum = parseInt(inputString);
+    if(!inputNum) return;
+    var rollNum = Math.floor(Math.random() * inputNum) + 1;
+    alert("Your roll is " + rollNum);
+    var rollAgain = confirm("Would like to roll again?");
+
+    if (rollAgain) {
+        return rollDice();
+    }
+}
