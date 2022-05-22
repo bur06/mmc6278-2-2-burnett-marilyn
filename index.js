@@ -16,7 +16,6 @@ function greet() {
     } else {
         alert("You were born in " + nextYr + "!");
     }
-
 }
 
 greet();
