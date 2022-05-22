@@ -10,17 +10,12 @@ function greeting() {
 
     if(!inputAge) return; //cancels without input
     var ageNum = parseInt(inputAge); //turns string into integer
-
     var today = new Date();
     var year = parseInt(today.getFullYear());
     var nowYr = parseInt(year);
+    let yrBorn = nowYr - ageNum;
 
-    var yrBorn = nowYr - ageNum;
-    
-    //return(yrBorn);
-    //console.log(typeof yrBorn);
-    //var yrBorn = Math.floor(nowYr - ageNum) + 1;
-    //alert("You were born in " + yrBorn + "!");
+    alert("You were born in " + yrBorn + "!");
 }
 
 greeting();
