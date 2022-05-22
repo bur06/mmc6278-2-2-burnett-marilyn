@@ -9,10 +9,12 @@ function greet() {
 
     var nowYr = parseInt(new Date().getFullYear());
 
-    if (confirm === true) {
-        alert(nowYr - userAge);
+    if (confirm) {
+        alert(nowYr - ageNum);
     } else {
-        alert(nowYr - userAge) + 1;
+        alert(nowYr - ageNum) + 1;
     }
 
 }
+
+greeting();
