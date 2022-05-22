@@ -7,16 +7,16 @@ function greet() {
     var ageNum = parseInt(userAge); //turns string into integer
     confirm("Have you had a birthday yet this year?");
 
-    var today = parseInt(new Date().getFullYear());
-    var nowYr = Math.floor(today - ageNum);
-    var nextYr = Math.floor(today - ageNum) + 1;
+    var today = new Date().getFullYear();
+    var birthYr = Math.floor(today - ageNum);
+    var nextYr = birthYr + 1;
 
     if (confirm) {
-        alert("You were born in " + nowYr + "!");
+        alert("You were born in " + birthYr + "!");
     } else {
         alert("You were born in " + nextYr + "!");
     }
 
 }
 
-//greet();
+greet();
