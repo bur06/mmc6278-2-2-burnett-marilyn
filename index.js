@@ -7,7 +7,12 @@ function greet() {
     var ageNum = parseInt(userAge); //turns string into integer
     confirm("Have you had a birthday yet this year?");
 
-    var today = new Date();
-    var nowYr = parseInt(today.getFullYear());
+    var nowYr = parseInt(new Date().getFullYear());
+
+    if (confirm === true) {
+        alert(nowYr - userAge);
+    } else {
+        alert(nowYr - userAge) + 1;
+    }
 
 }
