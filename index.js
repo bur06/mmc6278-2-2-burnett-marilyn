@@ -9,18 +9,13 @@ function greet() {
 
     var today = parseInt(new Date().getFullYear());
     var nowYr = Math.floor(today - userAge);
-    var nextYr = Math.round((today - userAge) + 1);
 
     if (confirm) {
         alert("You were born in " + nowYr + "!");
     } else {
-        alert("You were born in " + nextYr + "!");
+        alert("You were born in " + (nowYr + 1) + "!");
     }
 
 }
 
-greeting();
-
-
-var rollNum = Math.floor(Math.random() * inputNum) + 1;
-alert("Your roll is " + rollNum);
+greet();
