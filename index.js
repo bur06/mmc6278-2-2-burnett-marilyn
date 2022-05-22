@@ -7,14 +7,20 @@ function greet() {
     var ageNum = parseInt(userAge); //turns string into integer
     confirm("Have you had a birthday yet this year?");
 
-    var nowYr = parseInt(new Date().getFullYear());
+    var today = parseInt(new Date().getFullYear());
+    var nowYr = Math.floor(today - userAge);
+    var nextYr = Math.round((today - userAge) + 1);
 
     if (confirm) {
-        alert(nowYr - ageNum);
+        alert("You were born in " + nowYr + "!");
     } else {
-        alert(nowYr - ageNum) + 1;
+        alert("You were born in " + nextYr + "!");
     }
 
 }
 
 greeting();
+
+
+var rollNum = Math.floor(Math.random() * inputNum) + 1;
+alert("Your roll is " + rollNum);
